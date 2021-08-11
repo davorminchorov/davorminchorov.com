@@ -1,3 +1,3 @@
 # Davor Minchorov
 
-The front end application for davorminchorov.com
+Davor Minchorov's personal website and blog.
