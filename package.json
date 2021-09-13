@@ -48,6 +48,6 @@
     "stylelint": "^13.13.1",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^22.0.0",
-    "tailwindcss": "^2.2.14"
+    "tailwindcss": "^2.2.15"
   }
 }
