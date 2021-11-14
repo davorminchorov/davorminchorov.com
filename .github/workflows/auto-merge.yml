@@ -2,10 +2,6 @@ name: Merge me!
 
 on:
     workflow_run:
-        types:
-            - completed
-        workflows:
-            - 'ci'
 
 jobs:
     merge-me:
