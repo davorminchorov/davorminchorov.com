@@ -1,26 +1,23 @@
-import { join } from 'pathe'
 import { defineNuxtModule } from '@nuxt/kit'
+import {join} from "pathe";
 
 export default defineNuxtModule({
-  hooks: {
-    'components:dirs'(dirs) {
+  name: 'blog',
+  configKey: 'blog',
+  setup (options, nuxt) {
+    nuxt.hook('components:dirs', (dirs: any) => {
       // Add ./components dir to the list
       dirs.push({
         path: join(__dirname, 'components'),
       });
-    },
-    'generate:extendRoutes'(routes) {
+    });
 
-    },
-  },
-
-  build: {
-    extendRoutes: ((routes: any[]) => {
-      routes.unshift({
+    nuxt.options.router.extendRoutes = (routes, resolve) => {
+      routes.push({
         name: 'blog',
         path: '/blog',
-        component: join(__dirname, 'pages/blog.vue'),
-      });
-    }),
-  }
-});
+        component: resolve(__dirname, 'pages/blog.vue')
+      })
+    }
+  },
+})

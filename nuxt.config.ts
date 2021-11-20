@@ -13,6 +13,10 @@ export default defineNuxtConfig({
     },
   },
 
+  home: {
+    hello: 'there',
+  },
+
   modules: [
     '~/modules/blog/index.ts',
     '~/modules/home/index.ts',
