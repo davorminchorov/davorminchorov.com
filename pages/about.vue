@@ -1,5 +1,5 @@
 <template>
   <main class="flex justify-center">
-    The home page goes here
+    The about page goes here
   </main>
 </template>
