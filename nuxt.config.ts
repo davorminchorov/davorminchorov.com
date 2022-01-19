@@ -1,4 +1,5 @@
 import { defineNuxtConfig } from 'nuxt3';
+import {join} from "pathe";
 
 export default defineNuxtConfig({
   build: {
@@ -10,5 +11,14 @@ export default defineNuxtConfig({
         }
       }
     },
-  }
+  },
+
+  home: {
+    hello: 'there',
+  },
+
+  modules: [
+    '~/modules/blog/index.ts',
+    '~/modules/home/index.ts',
+  ],
 });
