@@ -14,7 +14,7 @@
     "@tailwindcss/typography": "^0.5.1",
     "autoprefixer": "^10.4.2",
     "nuxt3": "latest",
-    "postcss": "^8.4.5",
+    "postcss": "^8.4.17",
     "postcss-100vh-fix": "^1.0.2",
     "postcss-import": "^14.0.2",
     "sass": "^1.49.7",
